@@ -1,0 +1,32 @@
+.icons__list {
+    display: flex;
+    gap: 30px;
+}
+
+.icons__item {
+    width: calc((100% - 90px) / 3);
+}
+
+.icons__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+}
+
+.icons__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-font-color);
+}
+
+.icons__description {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}

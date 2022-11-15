@@ -1,0 +1,27 @@
+.soc-link {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.soc-link__item {
+    width: 44px;
+    height: 44px;
+}
+
+.soc-link__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #afb1b8;
+    border-radius: 50%;
+    transition: fill var(--animation), background-color var(--animation);
+    &:hover,
+    &:focus {
+     fill: #ffffff;
+     background-color: var(--accent-color);
+        }
+}
+
