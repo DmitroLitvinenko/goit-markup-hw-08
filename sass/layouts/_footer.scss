@@ -18,23 +18,29 @@
 
     @media screen and (min-width: 1200px) {
         align-items: baseline;
-        
+        flex-wrap: nowrap;
     }
 }
 
 
-.join {
-    @media screen and (min-width: 1200px) {
-        margin-left: 70px;}   
-}
-
 .logo__footer {
-    display: inline-block;
     color: $primaryWhite;
 }
 
 .address {
-    text-align: center;
+    @media screen and (min-width: 768px) {
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+        }
+
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+    }
+
 }
 
 .address__link {
@@ -61,12 +67,25 @@
       }
 }
 
+.join {
+    @media screen and (min-width: 768px) {
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+        margin-left: 70px;
+      }
+}
 
 .join__title {
     margin-bottom: 20px;
     font-weight: 700;
     line-height: 1.14;
-    text-align: center;
     text-transform: uppercase;
     color: $primaryWhite;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }

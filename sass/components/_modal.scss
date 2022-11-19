@@ -30,6 +30,15 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: opacity $animation;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        width: 450px;
+        height: 609px;
+    }
 }
 
 .modal-close {
@@ -86,6 +95,7 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: $primaryFontColor;
+    
 }
 
 .input-wrap {
@@ -139,6 +149,11 @@
      line-height: 1.17;
      letter-spacing: 0.01em;
      color: rgba(117, 117, 117, 0.5);
+
+    @media screen and (max-width: 1199px) {
+            font-size: 14px;
+            line-height: 1.14;
+        }
         }
 }
 
@@ -172,6 +187,11 @@
             border-color: $accentColor;
             transition: border-color $animation;
              }
+        }
+
+        @media screen and (max-width: 1199px) {
+            font-size: 12px;
+            line-height: 1.17;
         }
 }
 
