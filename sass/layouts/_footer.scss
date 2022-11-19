@@ -18,18 +18,18 @@
 
 .logo__footer {
     display: inline-block;
-    color: var(--primary-white);
+    color: $primaryWhite;
 }
 
 
 
 .address__link {
     line-height: 1.71;
-    color: var(--primary-white);
-    transition: color var(--animation);
+    color: $primaryWhite;
+    transition: $animation;
     &:hover,
     &:focus {
-     color: var(--accent-color);
+     color: $accentColor;
         }
 }
 
@@ -40,10 +40,10 @@
 .footer__link {
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
-    transition: color var(--animation);
+    transition: color $animation;
     &:hover,
     &:focus {
-      color: var(--accent-color);
+      color: $accentColor;
       }
 }
 
@@ -53,5 +53,5 @@
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
-    color: var(--primary-white);
+    color: $primaryWhite;
 }

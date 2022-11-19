@@ -20,10 +20,10 @@
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
-    color: var(--primary-white);
+    color:$primaryWhite;
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
-    transition: transform var(--animation);
+    transition: transform $animation;
     overflow: auto;
     .tile__link:hover &,
     .ptile__link:focus & {
@@ -32,7 +32,7 @@
 }
 
 .tile__link {
-    transition: box-shadow var(--animation);
+    transition: box-shadow $animation;
     &:hover,
     &:focus {
      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -50,13 +50,13 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--secondary-font-color);
+    color: $secondaryFontColor;
 }
 
 .project__description {
     font-size: 16px;
     line-height: 1.88;
-    color: var(--primary-font-color);
+    color: $primaryFontColor;
 }
 
 .project__container {

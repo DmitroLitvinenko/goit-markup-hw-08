@@ -17,11 +17,11 @@
     border: 1px solid #afb1b8;
     border-radius: 4px;
     fill: #afb1b8;
-    transition: fill var(--animation), border-color var(--animation);
+    transition: fill $animation, border-color $animation;
     &:hover,
     &:focus {
-     fill: var(--accent-color);
-     border-color: var(--accent-color);
+     fill: $accentColor;
+     border-color: $accentColor;
         }
 }
 

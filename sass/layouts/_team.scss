@@ -16,7 +16,7 @@
 }
 
 .people__item {
-    background-color: var(--primary-white);
+    background-color: $primaryWhite;
     width: calc((100% - 90px) / 4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -30,7 +30,7 @@
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    color: var(--secondary-font-color);
+    color: $secondaryFontColor;
 }
 
 .people__name {
@@ -39,6 +39,6 @@
 
 .people__description {
     font-weight: 400;
-    color: var(--primary-font-color);
+    color: $primaryFontColor;
 }
 

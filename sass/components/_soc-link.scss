@@ -17,11 +17,11 @@
     align-items: center;
     fill: #afb1b8;
     border-radius: 50%;
-    transition: fill var(--animation), background-color var(--animation);
+    transition: fill $animation, background-color $animation;
     &:hover,
     &:focus {
      fill: #ffffff;
-     background-color: var(--accent-color);
+     background-color: $accentColor;
         }
 }
 

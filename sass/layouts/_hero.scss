@@ -2,8 +2,7 @@
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
+    background-image: $gradient,
         url(../img/heroimg.jpg);
     max-width: 1600px;
     height: 600px;
@@ -25,13 +24,13 @@
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--primary-white);
+    color: $primaryWhite;
 }
 
 .hero__btn {
     padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    transition: background-color var(--animation);
+    transition: background-color $animation;
 }
 

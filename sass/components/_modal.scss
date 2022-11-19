@@ -13,7 +13,7 @@
     left: 0;
     opacity: 1;
     visibility: visible;
-    transition: opacity var(--animation), visibility var(--animation);
+    transition: opacity $animation, visibility $animation;
 }
 
 .modal {
@@ -25,11 +25,11 @@
     left: 50%;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background: var(--primary-white);
+    background: $primaryWhite;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    transition: opacity var(--animation);
+    transition: opacity $animation;
 }
 
 .modal-close {
@@ -44,10 +44,10 @@
     background-color: transparent;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: fill var(--animation);
+    transition: fill $animation;
      &:hover,
      &:focus {
-            fill: var(--accent-color);
+            fill: $accentColor;
         }
 }
 
@@ -64,7 +64,7 @@
     line-height: 1.15;
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(--secondary-font-color);
+    color: $secondaryFontColor;
 }
 
 .modal-field {
@@ -85,7 +85,7 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: var(--primary-font-color);
+    color: $primaryFontColor;
 }
 
 .input-wrap {
@@ -97,7 +97,7 @@
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-    transition: fill var(--animation);
+    transition: fill $animation;
 }
 
 .modal-input {
@@ -107,11 +107,11 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: transparent;
-    transition: border-color var(--animation), fill var(--animation);
+    transition: border-color $animation, fill $animation;
     &:focus {
-            border-color: var(--accent-color);
+            border-color: $accentColor;
             & + .modal-input-icon {
-                    fill: var(--accent-color);
+                    fill: $accentColor;
                 }
         }
         &::placeholder {
@@ -130,9 +130,9 @@
     outline: transparent;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color var(--animation);
+    transition: border-color $animation;
     &:focus {
-            border-color: var(--accent-color);
+            border-color: $animation;
         }
     &::placeholder {
      font-size: 12px;
@@ -161,16 +161,16 @@
       align-items: center;
       justify-content: center;
       fill: transparent;
-      transition: fill var(--accent-color), background-color var(--accent-color),
-      border-color var(--animation);
+      transition: fill $accentColor, background-color $accentColor,
+      border-color $animation;
         .input-check:checked + & {
-           background-color: var(--accent-color);
+           background-color:$accentColor;
            border-color: transparent;
-           fill: var(--primary-white);
+           fill: $primaryWhite;
            }
         .input-check:focus + & {
-            border-color: var(--accent-color);
-            transition: border-color var(--animation);
+            border-color: $accentColor;
+            transition: border-color $animation;
              }
         }
 }
@@ -179,7 +179,7 @@
 
 
 .privacy-link {
-    color: var(--accent-color);
+    color: $accentColor;
     text-decoration: underline;
 }
 
@@ -194,5 +194,5 @@
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    transition: box-shadow var(--animation), background-color var(--animation);
+    transition: box-shadow $animation, background-color $animation;
 }
