@@ -3,17 +3,29 @@
     padding-bottom: 60px;
     background-color: #2f303a;
      .logo {
-            margin-bottom: 20px;
+        margin-bottom: 20px;
         }
 }
 
 .footer__container {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    @media screen and (max-width: 767px) {
+        gap: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        align-items: baseline;
+        
+    }
 }
 
+
 .join {
-    margin-left: 70px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;}   
 }
 
 .logo__footer {
@@ -21,7 +33,9 @@
     color: $primaryWhite;
 }
 
-
+.address {
+    text-align: center;
+}
 
 .address__link {
     line-height: 1.71;
@@ -52,6 +66,7 @@
     margin-bottom: 20px;
     font-weight: 700;
     line-height: 1.14;
+    text-align: center;
     text-transform: uppercase;
     color: $primaryWhite;
 }

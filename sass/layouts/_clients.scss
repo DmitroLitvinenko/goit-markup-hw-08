@@ -1,11 +1,18 @@
 .card-logo {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 .card-logo__item {
-    width: calc((100% - 150px) / 6);
+    width: calc((100% - 30px) / 2);
     height: 92px;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 150px) / 6);
+    }
 }
 
 .card-logo__link {

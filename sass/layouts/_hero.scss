@@ -14,23 +14,33 @@
 }
 
 .hero__title {
-    width: 696px;
+    width: 360px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $primaryWhite;
+
+    @media screen and (min-width: 1200px) {
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .hero__btn {
-    padding: 10px 32px;
+    padding: 10px 24px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     transition: background-color $animation;
+
+    @media screen and (min-width: 1200px) {
+        padding: 10px 32px;
+    }
 }
 
