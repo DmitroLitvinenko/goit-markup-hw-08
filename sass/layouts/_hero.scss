@@ -3,7 +3,7 @@
     padding-top: 118px;
     padding-bottom: 118px;
     background-image: $gradient,
-        url(../../img/heroimg-mob.jpg);
+        url(../img/heroimg-mob.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,16 +12,16 @@
 
     @include retina {
         background-image: $gradient,
-            url(../../img/heroimg-mob@2x.jpg);
+            url(../img/heroimg-mob@2x.jpg);
             }
         
 
      @include tablet {
         background-image: $gradient,
-            url(../../img/heroimg-tab.jpg);
+            url(../img/heroimg-tab.jpg);
         @include retina {
                 background-image: $gradient,
-                url(../../img/heroimg-tab@2x.jpg);
+                url(../img/heroimg-tab@2x.jpg);
             }
         }
     
@@ -32,10 +32,10 @@
         max-width: 1600px;
         height: 600px;
         background-image: $gradient,
-            url(../../img/heroimg.jpg);
+            url(../img/heroimg.jpg);
         @include retina {
                 background-image: $gradient,
-                url(../../img/heroimg@2x.jpg);
+                url(../img/heroimg@2x.jpg);
             }
         }
     
