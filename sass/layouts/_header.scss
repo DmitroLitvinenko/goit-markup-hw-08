@@ -12,11 +12,18 @@
 }
 
 .nav__list {
-    // display: flex;
     display: none;
-    margin-left: 93px;
+    margin-left: 87px;
     gap: 50px;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
 }
 
 .logo__header {
@@ -58,10 +65,19 @@
 }
 
 .contact {
-    // display: flex;
     display: none;
     margin-left: auto;
-    gap: 50px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        gap: 50px;
+    }
 }
 
 .contact__link {
@@ -72,6 +88,10 @@
     &:focus {
             color: $accentColor;
         }
+
+    @media screen and (max-width: 1200px) {
+        padding: 0;
+    }
 }
 
 .icon {
