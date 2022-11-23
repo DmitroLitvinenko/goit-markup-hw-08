@@ -799,7 +799,6 @@ img {
 }
 
 .hero__title {
-  width: 360px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -809,6 +808,11 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    max-width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {

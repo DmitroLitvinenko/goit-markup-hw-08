@@ -42,7 +42,6 @@
 }
 
 .hero__title {
-    width: 360px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -53,6 +52,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $primaryWhite;
+
+    @media screen and (max-width: 1199px) {
+        max-width: 360px;
+    }
 
     @include desktop {
         width: 696px;
