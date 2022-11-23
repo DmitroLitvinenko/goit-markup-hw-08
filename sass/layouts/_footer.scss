@@ -16,7 +16,7 @@
         gap: 60px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         align-items: baseline;
         flex-wrap: nowrap;
     }
@@ -28,7 +28,7 @@
 }
 
 .address {
-    @media screen and (min-width: 768px) {
+    @include tablet {
         margin: 0 auto;
         margin-bottom: 60px;
     }
@@ -37,7 +37,7 @@
         text-align: center;
         }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         margin: 0;
     }
 
@@ -68,11 +68,11 @@
 }
 
 .join {
-    @media screen and (min-width: 768px) {
+    @include tablet {
         margin: 0 auto;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         margin: 0;
         margin-left: 70px;
       }

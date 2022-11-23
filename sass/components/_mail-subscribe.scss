@@ -1,7 +1,7 @@
 .subsbcribe {
    width: 100%;
 
-   @media screen and (min-width: 1200px) {
+   @include desktop {
         margin-left: auto;
         width: auto;
    }
@@ -31,7 +31,7 @@
             
         }
     
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         gap: 12px;
         flex-wrap: nowrap;
     }
@@ -54,7 +54,7 @@
             color: rgba(255, 255, 255, 0.6);
         }
 
-        @media screen and (min-width: 1200px) {
+        @include desktop {
             width: 358px;
         }
 }

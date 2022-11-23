@@ -1,16 +1,44 @@
 .hero {
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: $gradient,
-        url(../img/heroimg.jpg);
-    max-width: 1600px;
-    height: 600px;
+        url(../../img/heroimg-mob.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
     background-color: #2f303a;
+
+    @include retina {
+        background-image: $gradient,
+            url(../../img/heroimg-mob@2x.jpg);
+            }
+        
+
+     @include tablet {
+        background-image: $gradient,
+            url(../../img/heroimg-tab.jpg);
+        @include retina {
+                background-image: $gradient,
+                url(../../img/heroimg-tab@2x.jpg);
+            }
+        }
+    
+
+    @include desktop {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        max-width: 1600px;
+        height: 600px;
+        background-image: $gradient,
+            url(../../img/heroimg.jpg);
+        @include retina {
+                background-image: $gradient,
+                url(../../img/heroimg@2x.jpg);
+            }
+        }
+    
 }
 
 .hero__title {
@@ -26,7 +54,7 @@
     text-transform: uppercase;
     color: $primaryWhite;
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         width: 696px;
         font-size: 44px;
         line-height: 1.36;
@@ -39,7 +67,7 @@
     border-radius: 4px;
     transition: background-color $animation;
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         padding: 10px 32px;
     }
 }

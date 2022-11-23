@@ -17,11 +17,11 @@
     gap: 50px;
     align-items: center;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         display: flex;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         margin-left: 93px;
     }
 }
@@ -68,13 +68,13 @@
     display: none;
     margin-left: auto;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         flex-direction: row;
         gap: 50px;
     }
