@@ -549,6 +549,10 @@ img {
   pointer-events: none;
 }
 
+.menu-open {
+  margin-left: auto;
+}
+
 .menu-open,
 .menu-close {
   border: none;
@@ -589,7 +593,7 @@ img {
   padding-bottom: 48px;
 }
 
-.menu-close, .menu-open {
+.menu-close {
   position: absolute;
   top: 10px;
   right: 15px;
