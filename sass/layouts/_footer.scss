@@ -16,8 +16,12 @@
         gap: 60px;
     }
 
-    @include desktop {
+    @include tablet {
         align-items: baseline;
+    }
+
+    @include desktop {
+        
         flex-wrap: nowrap;
     }
 }
